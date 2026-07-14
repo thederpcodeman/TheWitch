@@ -3,5 +3,8 @@
   "THEWITCH-WITCH_STRIKE.description": "Deal 6 [9] Damage",
 
   "THEWITCH-WITCH_DEFEND.title": "Defend",
-  "THEWITCH-WITCH_DEFEND.description": "Gain 5 [8] Block"
+  "THEWITCH-WITCH_DEFEND.description": "Gain 5 [8] Block",
+
+  "THEWITCH-MANIFEST_SUBSTANCE.title": "Manifest Substance",
+  "THEWITCH-MANIFEST_SUBSTANCE.description": "Gain 8 [11] Block.\nGain 5 Essence.\n[Gain 3 Essence nest turn]"
 }
