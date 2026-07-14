@@ -6,6 +6,7 @@ using MegaCrit.Sts2.Core.Entities.Characters;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Cards;
 using MegaCrit.Sts2.Core.Models.Relics;
+using TheWitch.TheWitchCode.Cards;
 
 namespace TheWitch.TheWitchCode.Character;
 
@@ -21,16 +22,14 @@ public class TheWitch : PlaceholderCharacterModel
 
     public override IEnumerable<CardModel> StartingDeck =>
     [
-        ModelDb.Card<StrikeIronclad>(),
-        ModelDb.Card<StrikeIronclad>(),
-        ModelDb.Card<StrikeIronclad>(),
-        ModelDb.Card<StrikeIronclad>(),
-        ModelDb.Card<StrikeIronclad>(),
-        ModelDb.Card<DefendIronclad>(),
-        ModelDb.Card<DefendIronclad>(),
-        ModelDb.Card<DefendIronclad>(),
-        ModelDb.Card<DefendIronclad>(),
-        ModelDb.Card<DefendIronclad>()
+        ModelDb.Card<WitchStrike>(),
+        ModelDb.Card<WitchStrike>(),
+        ModelDb.Card<WitchStrike>(),
+        ModelDb.Card<WitchStrike>(),
+        ModelDb.Card<WitchDefend>(),
+        ModelDb.Card<WitchDefend>(),
+        ModelDb.Card<WitchDefend>(),
+        ModelDb.Card<WitchDefend>(),
     ];
 
     public override IReadOnlyList<RelicModel> StartingRelics =>
