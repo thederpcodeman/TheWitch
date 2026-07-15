@@ -13,18 +13,19 @@ public sealed class ManifestSubstance() : TheWitchCard(2, CardType.Skill, CardRa
 
     public override bool GainsBlock => true;
 
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(8M, ValueProp.Move), new PowerVar<EssencePower>(0)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(8M, ValueProp.Move), new PowerVar<EssenceNextTurn>(0)];
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
-        Decimal num = await CreatureCmd.GainBlock(Owner.Creature, DynamicVars.Block, cardPlay);
-        
+        await CreatureCmd.GainBlock(Owner.Creature, DynamicVars.Block, cardPlay);
+        await PowerCmd.Apply<ApplyEssence>(choiceContext, Owner.Creature, 5m, Owner.Creature, null);
+        await PowerCmd.Apply<EssenceNextTurn>(choiceContext, Owner.Creature, DynamicVars[nameof(EssenceNextTurn)].BaseValue, Owner.Creature, null);
         
     }
 
     protected override void OnUpgrade()
     {
         this.DynamicVars.Block.UpgradeValueBy(3M);
-        this.DynamicVars.Power<EssencePower>().UpgradeValueBy(3M);
+        this.DynamicVars.Power<EssenceNextTurn>().UpgradeValueBy(3M);
     } 
 }

@@ -19,11 +19,8 @@ public class EssencePower() : TheWitchPower()
         if (this.Amount > 0) 
         {
             await PowerCmd.Apply<EssencePower>(choiceContext, Owner, -1M, Owner, null, true);
-            await PowerCmd.Apply<StrengthPower>(choiceContext, Owner, -1M, Owner, null, true);
-            await PowerCmd.Apply<DexterityPower>(choiceContext, Owner, -1M, Owner, null, true);
         }
     }
-
     public override async Task BeforeApplied(
         Creature target,
         Decimal amount,

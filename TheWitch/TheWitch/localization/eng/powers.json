@@ -5,5 +5,9 @@
 
   "THEWITCH-ESSENCE_NEXT_TURN.title": "Essence Next Turn",
   "THEWITCH-ESSENCE_NEXT_TURN.description": "Gives Essence next turn",
-  "THEWITCH-ESSENCE_NEXT_TURN.smartDescription": "Gives Essence next turn"
+  "THEWITCH-ESSENCE_NEXT_TURN.smartDescription": "Gives Essence next turn",
+
+  "THEWITCH-APPLY_ESSENCE.title": "Apply Essence",
+  "THEWITCH-APPLY_ESSENCE.description": "Apply Essence",
+  "THEWITCH-APPLY_ESSENCE.smartDescription": "Apply Essence"
 }
