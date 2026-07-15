@@ -6,5 +6,8 @@
   "THEWITCH-WITCH_DEFEND.description": "Gain 5 [8] Block",
 
   "THEWITCH-MANIFEST_SUBSTANCE.title": "Manifest Substance",
-  "THEWITCH-MANIFEST_SUBSTANCE.description": "Gain 8 [11] Block.\nGain 5 Essence.\n[Gain 3 Essence nest turn]"
+  "THEWITCH-MANIFEST_SUBSTANCE.description": "Gain 8 [11] Block.\nGain 5 Essence.\n[Gain 3 Essence nest turn]",
+  
+  "THEWITCH-COMPREHEND_UNCERTAINTY.title": "Comprehend Uncertainty",
+  "THEWITCH-COMPREHEND_UNCERTAINTY.description": "Scry 1 [2]\nIf this is the first Comprehend Uncertainty you have played this turn, draw a card."
 }

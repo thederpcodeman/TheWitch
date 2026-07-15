@@ -31,6 +31,7 @@ public class TheWitch : PlaceholderCharacterModel
         ModelDb.Card<WitchDefend>(),
         ModelDb.Card<WitchDefend>(),
         ModelDb.Card<ManifestSubstance>(),
+        ModelDb.Card<ComprehendUncertainty>()
     ];
 
     public override IReadOnlyList<RelicModel> StartingRelics =>
